@@ -45,6 +45,7 @@ main {
     flex-direction: row;
     margin-top: 30px;
     justify-content: space-between;
+
 }
 
 span {
@@ -75,7 +76,10 @@ img {
 footer {
     display: flex;
     flex-direction: column;
+}
 
+ul {
+    padding-left: 0vh;
 }
 
 #titulo-footer {
@@ -84,14 +88,13 @@ footer {
 
  .itens-footer {
     display: inline;
-    margin: 5px;
  }
-
  #style-item-cell, #style-item-email {
     
     border: 2px solid rgb(132, 14, 201);
     padding: 10px;
     border-radius: 15px;
+    
  }
 
  #style-item-cell:hover, #style-item-email:hover {
