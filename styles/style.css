@@ -7,6 +7,7 @@ body {
     font-family: 'Righteous', cursive;
     max-width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 header {
@@ -48,8 +49,14 @@ main {
 
 }
 
+#container-subtitulo {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
 span {
-    margin-bottom: 150px;
     color: rgb(132, 14, 201);
     font-size: 56px;
 }
@@ -57,10 +64,10 @@ span {
 h2 {
     font-size: 56px;
     line-height: 10px;
+    margin-top: 30px;
 }
 
 h3 {
-    margin-top: 70px;
     font-size: 40px;
 }
 
@@ -152,3 +159,5 @@ ul {
         align-items: center;
     }
 }
+
+
