@@ -5,36 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles/style.css" rel="stylesheet">
-    <link rel="icon" href="./components/images/Kiwi-icon-main.png">
+    <link href="./assets/styles/style.css" rel="stylesheet">
+    <link rel="icon" href="./assets/images/Kiwi-icon-main.png">
     <title>Kiwi Bot</title>
 </head>
 
 <body>
     <header>
-        <div id="title">
-            <h1>Kiwi</h1>
-            <h1>Bot Discord</h1>
-        </div>
+        <nav class="nav-bar">
+            <div id="title">
+                <h1>Kiwi</h1>
+                <h1>Bot Discord</h1>
+            </div>
 
-        <ul>
-            <a href="https://discord.com/channels/857242928366878731/973562045662380072" target="_blank">
-                <li class="itens-header">Como usar</li>
-            </a>
-            <a href="https://discord.com/channels/857242928366878731/973555754109906984" target="_blank">
-                <li class="itens-header">Comandos</li>
-            </a>
-            <a href="https://discord.gg/SdnpFDNDqk" target="_blank">
-                <li class="itens-header">Comunidade</li>
-            </a>
-            <a href="https://github.com/Thay7/Kiwi" target="_blank">
-                <li class="itens-header">Open Source</li>
-            </a>
-        </ul>
+            <ul>
+                <a href="https://discord.com/channels/857242928366878731/973562045662380072" target="_blank">
+                    <li class="itens-header">Como usar</li>
+                </a>
+                <a href="https://discord.com/channels/857242928366878731/973555754109906984" target="_blank">
+                    <li class="itens-header">Comandos</li>
+                </a>
+                <a href="https://discord.gg/SdnpFDNDqk" target="_blank">
+                    <li class="itens-header">Comunidade</li>
+                </a>
+                <a href="https://github.com/Thay7/Kiwi" target="_blank">
+                    <li class="itens-header">Open Source</li>
+                </a>
+            </ul>
+        </nav>
+
+        <nav class="nav-bar-mobile">
+            <div class="logo-mobile">
+                <h1>Kiwi Bot Discord</h1>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/assets/images/menu_white_36dp.svg"
+                        width=""></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="https://discord.com/channels/857242928366878731/973562045662380072"
+                        class="nav-link">Como usar</a></li>
+                <li class="nav-item"><a href="https://discord.com/channels/857242928366878731/973555754109906984"
+                        class="nav-link">Comandos</a></li>
+                <li class="nav-item"><a href="https://discord.gg/SdnpFDNDqk" class="nav-link">Comunidade</a></li>
+                <li class="nav-item"><a href="https://github.com/Thay7/Kiwi" class="nav-link">Open Source</a></li>
+            </ul>
+        </div>
     </header>
 
-    <main>
 
+    <main>
         <aside>
             <div id="container-subtitulo">
                 <span>Modere seu Servidor</span>
@@ -42,14 +66,15 @@
             </div>
 
             <h3>O que ela faz por você?</h3>
-
-            <p>1. Automatiza a moderação do seu servidor com comandos de pessoas administradoras.</p>
-            <p>2. Possui comandos divertidos para o entretenimento dos membros.</p>
-            <p>3. Comandos sobre informações dos usuários e do servidor.</p>
+            <div id="main-mobile-menu">
+                <p>1. Automatiza a moderação do seu servidor com comandos de pessoas administradoras.</p>
+                <p>2. Possui comandos divertidos para o entretenimento dos membros.</p>
+                <p>3. Comandos sobre informações dos usuários e do servidor.</p>
+            </div>
         </aside>
 
         <article>
-            <img src="./components/images/Kiwi-icon-main.png" alt="Kiwi">
+            <img id="img-kiwi" src="/assets/images/Kiwi-icon-main.png" alt="Kiwi">
         </article>
 
     </main>
@@ -67,5 +92,7 @@
     </footer>
 
 </body>
+
+<script src="./assets/scripts/main.js"></script>
 
 </html>
