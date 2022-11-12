@@ -20,48 +20,10 @@ header {
     padding-right: 1.5rem 6rem;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo h1 {
-    color: #fff;
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-}
-
-.nav-list ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-item {
-    margin: 0 15px;
-}
-
-.nav-link {
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: #fff;
-    font-weight: 400;
-}
-
-.mobile-menu-icon {
-    display: none;
-}
-
-.mobile-menu {
-    display: none;
-}
-
 .nav-bar-mobile,
 .logo-mobile,
-.mobile-menu {
+.mobile-menu,
+.mobile-menu-icon {
     display: none;
 }
 
@@ -75,7 +37,10 @@ header {
 #title {
     flex-direction: column;
     line-height: 10px;
-    padding-left: 30px;
+}
+
+#title h1 {
+    font-size: 30px;
 }
 
 .itens-header {
@@ -83,16 +48,12 @@ header {
     margin: 20px;
 }
 
-h1 {
-    font-weight: 200px;
-}
-
-a {
+.itens-menu-nav {
     text-decoration: none;
     color: #FFF;
 }
 
-a:hover {
+.itens-menu-nav:hover {
     color: rgb(132, 14, 201);
     transition: 0.3s all;
 }
@@ -166,9 +127,19 @@ ul {
     color: #FFF;
 }
 
+.footer a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer a:hover {
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
 @media screen and (max-width: 905px) {
-    .nav-bar,
-    .nav-list {
+
+    .nav-bar {
         display: none;
     }
 
@@ -185,14 +156,12 @@ ul {
         padding-right: 1.5rem 6rem;
     }
 
-    .mobile-menu {
-        display: none;
-    }
-
-    .logo-mobile h1 {
+    .logo-mobile img {
         margin-left: 20px;
         display: flex;
         flex-direction: row;
+        width: 60px;
+        margin-left: 30px;
     }
 
     .mobile-menu-icon button {
@@ -203,19 +172,25 @@ ul {
 
     .mobile-menu-icon img {
         width: 40px;
-        margin-right: 40px;
+        margin-right: 30px;
     }
 
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-bottom: 1rem;
+        margin-top: 0px;
     }
 
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
+    }
+
+    .nav-link {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
     }
 
     .open {
@@ -258,6 +233,7 @@ ul {
         display: flex;
         flex-direction: row;
         text-align: center;
+        align-items: center;
         margin-left: 50px;
         font-size: 20px;
     }
@@ -276,6 +252,4 @@ ul {
     footer h1 {
         text-align: center;
     }
-
-
 }
