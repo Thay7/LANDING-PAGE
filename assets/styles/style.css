@@ -5,7 +5,7 @@ body {
     background-color: rgb(34, 34, 34);
     color: #FFF;
     font-family: 'Righteous', cursive;
-    max-width: 1200px;
+    max-width: 1200vh;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -255,7 +255,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 384px) {
+@media screen and (max-width: 363px) {
     .nav-bar {
         display: none;
     }
